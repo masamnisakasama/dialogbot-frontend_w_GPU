@@ -1,4 +1,4 @@
-# Continuous_DialogBot_w_MLOps
+# Continuous_DialogBot_w_MLOps(Only a Concept)
 
 ## 概要
 このプロジェクトはほぼほぼ思いつきで、まだ中身の着手には至っておりません。
