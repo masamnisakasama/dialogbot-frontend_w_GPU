@@ -4,3 +4,7 @@ sqlalchemy
 pydantic
 openai
 python-dotenv
+sqlalchemy
+databases  
+sentence-transformers
+matplotlib

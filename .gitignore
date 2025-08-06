@@ -31,3 +31,7 @@ Pipfile.lock
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
+
+# DB　for Test
+test.db
+*.sqlite3

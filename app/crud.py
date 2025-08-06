@@ -1,22 +1,21 @@
 from sqlalchemy.orm import Session
-from . import models, schemas
-from .features import classify_dialogue_style
+from app import models, schemas
+from typing import List
 
-def create_conversation(db: Session, conversation: schemas.ConversationCreate):
-    style_info = classify_dialogue_style(conversation.message)
-
-    db_convo = models.Conversation(
-        user=conversation.user,
-        message=conversation.message,
-        style=style_info.get("style"),
-        emotion=style_info.get("emotion"),
-        emotional_intensity=style_info.get("emotional_intensity"),
-        topic=style_info.get("topic"),
+def create_conversation(db: Session, conv: schemas.ConversationCreate, analysis: dict, embedding: bytes):
+    db_conv = models.Conversation(
+        user=conv.user,
+        message=conv.message,
+        style=analysis.get("style"),
+        emotion=analysis.get("emotion"),
+        emotional_intensity=analysis.get("emotional_intensity"),
+        topic=analysis.get("topic"),
+        embedding=embedding
     )
-    db.add(db_convo)
+    db.add(db_conv)
     db.commit()
-    db.refresh(db_convo)
-    return db_convo
+    db.refresh(db_conv)
+    return db_conv
 
-def get_conversations(db: Session, skip: int = 0, limit: int = 100):
-    return db.query(models.Conversation).offset(skip).limit(limit).all()
+def get_all_conversations(db: Session) -> List[models.Conversation]:
+    return db.query(models.Conversation).all()

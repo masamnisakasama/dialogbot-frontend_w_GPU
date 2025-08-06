@@ -1,5 +1,6 @@
 from pydantic import BaseModel
 from datetime import datetime
+from typing import List, Optional
 
 class ConversationCreate(BaseModel):
     user: str
@@ -10,10 +11,16 @@ class Conversation(BaseModel):
     user: str
     message: str
     timestamp: datetime
-    style: str | None = None
-    emotion: str | None = None
-    emotional_intensity: str | None = None
-    topic: str | None = None
+    style: Optional[str] = None
+    emotion: Optional[str] = None
+    emotional_intensity: Optional[str] = None
+    topic: Optional[str] = None
 
     class Config:
         orm_mode = True
+
+class Explanation(BaseModel):
+    id: int
+    similarity: float
+    top_dimensions: List[int]
+    explanation_text: Optional[str] = None
