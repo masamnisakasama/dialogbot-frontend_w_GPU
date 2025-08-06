@@ -1,18 +1,11 @@
 # Python
-__pycache__/
 *.py[cod]
-*.pyo
-*.pyd
 *.env
 .env
 env/
-venv/
-dialogbot-env/
 *.sqlite3
 *.db
 
-# VSCode
-.vscode/
 
 # macOS
 .DS_Store
@@ -23,15 +16,39 @@ dialogbot-env/
 # Byte-compiled / optimized / DLL files
 *.so
 
-# Pipenv
-Pipfile.lock
 
-# pyenv
+
 .python-version
 
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints/
 
 # DB　for Test
 test.db
 *.sqlite3
+=======
+# 依存モジュール
+node_modules/
+
+# ログ
+yarn-debug.log*
+yarn-error.log*
+
+# ビルド出力
+build/
+
+# 環境変数
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# エディタやOS依存ファイル
+.DS_Store
+.idea/
+
+
+# テストカバレッジ
+coverage/
+
+# ロックファイル（必要に応じて）
+package-lock.json
+yarn.lock
