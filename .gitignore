@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.env
+.env
+env/
+venv/
+dialogbot-env/
+*.sqlite3
+*.db
+
+# VSCode
+.vscode/
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Byte-compiled / optimized / DLL files
+*.so
+
+# Pipenv
+Pipfile.lock
+
+# pyenv
+.python-version
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
