@@ -1,4 +1,4 @@
-# Continuous_DialogBot_w_MLOps(Only a Concept)
+# Continuous_DialogBot_w_MLOps(WIP)
 
 ## 概要
 このプロジェクトはほぼほぼ思いつきで、今のところFastAPIの基礎的な実装およびOpenAI APIの実装が終わっております。
