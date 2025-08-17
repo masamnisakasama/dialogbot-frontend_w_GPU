@@ -1,54 +1,72 @@
+# ----------------------
 # Python
+# ----------------------
+__pycache__/
 *.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Environments
 *.env
 .env
 env/
+venv/
+dialogbot-env/
+.venv/
+
+# SQLite / DB files
 *.sqlite3
 *.db
-
-
-# macOS
-.DS_Store
+test.db
 
 # Logs
 *.log
 
-# Byte-compiled / optimized / DLL files
-*.so
+# Pipenv
+Pipfile.lock
 
-
-
+# pyenv
 .python-version
 
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
 
-# DB　for Test
-test.db
-*.sqlite3
-=======
-# 依存モジュール
+# ----------------------
+# Node / React
+# ----------------------
 node_modules/
-
-# ログ
+build/
+dist/
+npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-# ビルド出力
-build/
-
-# 環境変数
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# エディタやOS依存ファイル
-.DS_Store
-.idea/
-
-
-# テストカバレッジ
-coverage/
-
-# ロックファイル（必要に応じて）
 package-lock.json
-yarn.lock
+.cache/
+
+# ----------------------
+# VSCode
+# ----------------------
+.vscode/
+
+# ----------------------
+# macOS
+# ----------------------
+.DS_Store
+
+# ----------------------
+# Model / Data
+# ----------------------
+*.pt
+*.pth
+*.onnx
+*.ckpt
+*.model
+*.bin
+*.wav
+*.mp3
+*.m4a
+*.aiff
+*.flac
+uploads/
+tmp/
