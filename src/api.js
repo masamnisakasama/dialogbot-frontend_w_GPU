@@ -1,4 +1,5 @@
-// 既存の import はそのまま。S3Client などを使っている前提です。
+// api.js
+// 既存の import はそのまま。S3Client などを使っている前提
 import { S3Client, ListObjectsV2Command, GetObjectCommand } from "@aws-sdk/client-s3";
 
 const API_BASE = process.env.REACT_APP_API_BASE || "http://127.0.0.1:8015";
