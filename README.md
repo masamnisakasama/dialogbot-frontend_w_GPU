@@ -1,0 +1,1 @@
+GPU付きでDialogbotを動かすためのレポです。なお、現在動いているGPU付きのバージョンはGoogle　cloudのCLIでdockerファイルをいじったり、app/stt/whisper_utils.pyをhotfixしてできたものです。ここにあるレポで同じようにデプロイしようとしてもCUDAとPytorchの互換性や、GPUとCPUの切り替えのフラグ不備で失敗します。訂正版をそのうちgit pushします。
